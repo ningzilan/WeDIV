@@ -1,5 +1,5 @@
 # k-means-3
-An Improved K-means Clustering Algorithm Involving a Weighted Similarity Metric and a Novel Internal Validation Index 
+An Improved K-means Clustering Algorithm Involving new Similarity Metric EP_dis and a Novel Internal Validation Index.
 1) MATLAB is the tool of k-means-3
 2) Usage
 
