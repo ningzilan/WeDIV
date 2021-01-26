@@ -1,15 +1,15 @@
 function [Y_optimal,K_optimal,W_optimal] = K_means_3(data,w_step,KList)
 %K-means-3
-% Input£ºdata 
+% Inputï¼šdata 
 %        w_step: the step size of weight 
 %        KList: being a constant when the true cluster number was given, otherwise being a vector as 2:NC.  
-% output£ºY_optimal: clustering label£¬
+% outputï¼šY_optimal: clustering labelï¼Œ
 %         K_optimal: the optimal number of cluster,
 %         W_optimal: the optimal weight
 % zilan Ning 2019/5
 
 
-[nrow,mcol]=size(data);      %step 1
+[nrow,mcol]=size(data);      
 Sdata=standard_z(data);   
 [E0,~]=similarity_euclid(Sdata);
 E1=nornaliz(E0);
@@ -26,8 +26,6 @@ end
 	
 
 
-%  input: data  Êý¾Ý¾ØÕó  
-%  output:sdata Ã¿Ò»ÁÐ£¨ÌØÕ÷£©±ê×¼»¯ºóµÄ¾ØÕó
 function [sdata]=standard_z(data)
 	nrow=size(data,1);
 	colmean=mean(data);
@@ -98,7 +96,7 @@ n_w=1;
 		for i=1:K
 			Cindex=find(fy==i);
 			n_i=length(Cindex);
-			if n_i>1        %µ÷ÕûÖÊÐÄ£¬´ØÖÐµ½ËùÓÐÑù±¾¾àÀë×îÐ¡µÄÑù±¾µãÎªÐÂÖÊÐÄ
+			if n_i>1        
 				data_i=Sdata(Cindex,:);
 				ED_i=ED_Pearson(Cindex,:);
 				ED_i=ED_i(:,Cindex);
@@ -107,7 +105,7 @@ n_w=1;
                 center(1,i)=lab;
 			end
         end
-        fy=clustering(Sdata,C,w);  %Ñù±¾¹éÀà
+        fy=clustering(Sdata,C,w);  
         count=count+1;
     end
     [CH_W(n_w),CH_W_0(n_w)]=get_CH(Sdata,fy);
