@@ -1,5 +1,5 @@
-function [Y_optimal,K_optimal,W_optimal] = K_means_3(data,w_step,KList)
-%K-means-3
+function [Y_optimal,K_optimal,W_optimal] = WeDIV(data,w_step,KList)
+%WeDIV
 % Input：data 
 %        w_step: the step size of weight 
 %        KList: being a constant when the true cluster number was given, otherwise being a vector as 2:NC.  
