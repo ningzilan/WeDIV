@@ -1,4 +1,4 @@
-# k-means-3
+# WeDIV
 An Improved K-means Clustering Algorithm Involving new Similarity Metric EP_dis and a Novel Internal Validation Index.
 1) MATLAB is the tool of WeDIV
 2) Usage
