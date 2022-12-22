@@ -1,9 +1,9 @@
 # k-means-3
 An Improved K-means Clustering Algorithm Involving new Similarity Metric EP_dis and a Novel Internal Validation Index.
-1) MATLAB is the tool of k-means-3
+1) MATLAB is the tool of WeDIV
 2) Usage
 
-   [Y_optimal,K_optimal,W_optimal] = K_means_3(data,w_step,KList)
+   [Y_optimal,K_optimal,W_optimal] = WeDIV(data,w_step,KList)
    
   Input:
   
